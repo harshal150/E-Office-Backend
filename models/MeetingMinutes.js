@@ -1,33 +1,4 @@
-// const connection = require('../config/dbconnect');
 
-// class MeetingMinutes {
-//   constructor(meetingId, userId, minutes, createdAt) {
-//     this.meetingId = meetingId;
-//     this.userId = userId;
-//     this.minutes = minutes;
-//     this.createdAt = createdAt;
-//   }
-
-//   async save() {
-//     try {
-//       const query = `
-//         INSERT INTO MeetingMinutes (meeting_id, user_id, minutes, created_at)
-//         VALUES (?, ?, ?, ?)
-//       `;
-//       const [result] = await connection.execute(query, [
-//         this.meetingId,
-//         this.userId,
-//         this.minutes,
-//         this.createdAt
-//       ]);
-//       return result.insertId; // Return the ID of the newly inserted meeting minutes
-//     } catch (error) {
-//       throw new Error(`Error saving meeting minutes: ${error.message}`);
-//     }
-//   }
-// }
-
-// module.exports = MeetingMinutes;
 
 
 // models/MeetingMinutes.js
